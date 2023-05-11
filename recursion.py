@@ -21,7 +21,9 @@ def compareTo(s1, s2):
         return 0
     elif s1 > s2:
         return 1
+    compareTo(s1[1:], s2[1:])
 
 if __name__ == "__main__":
     print(fibonnaci(8))
     print(gcd(42, 120))
+    print(compareTo('test', 'Test'))
